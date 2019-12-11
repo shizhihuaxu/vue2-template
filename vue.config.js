@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   // css: {
@@ -39,4 +39,17 @@ module.exports = {
       // injector: 'append'
     },
   },
-};
+  devServer: {
+    // 配置代理
+    proxy: {
+      '/api': {
+        target: 'http://192.168.166.32',
+        changeOrigin: true,
+        secure: false,
+        pathRewrite: {
+          '^/api': '',
+        },
+      },
+    },
+  },
+}
