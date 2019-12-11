@@ -1,0 +1,202 @@
+/**
+ * @desc 	工具类
+ * @author 	shizhihuaxu 2019/12/11
+ */
+ @import './variables.scss';
+ @import './mixins.scss';
+
+// ----------------- 页面内容宽度  -----------------------------
+.container {
+	margin: 0 auto;
+
+	@media (max-width: 575px) {
+		padding: 0 10px;
+	}
+
+	@media (min-width: 576px) {
+		max-width: 540px;
+	}
+
+	@media (min-width: 768px) {
+		max-width: 720px;
+	}
+
+	@media (min-width: 992px) {
+		max-width: 960px;
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1140px;
+	}
+}
+
+.container-top {
+	padding-top: 60px;
+
+	@media (min-width: $bp-md) {
+		padding-top: 80px;
+	}
+}
+
+// --------------------  标题  -----------------------------
+h2,
+.h2 {
+	font-size: $h2-font-size;
+}
+
+h3,
+.h3 {
+	font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+	font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+	font-size: $h5-font-size;
+}
+
+h2,
+h3,
+h4,
+h5 {
+	color: #fff;
+	font-weight: 600;
+
+	&.dark {
+		color: $font-title-color;
+	}
+}
+
+// -------------------  间距  ------------------------------
+@for $i from 1 through 5 {
+	.mt#{$i} {
+		margin-top: $i * 10px;
+	}
+
+	.mt#{$i}e {
+		margin-top: $i * 1em;
+	}
+
+	.mt#{$i}r {
+		margin-top: $i * 1rem;
+	}
+
+	.mb#{$i} {
+		margin-bottom: $i * 10px;
+	}
+
+	.mb#{$i}e {
+		margin-bottom: $i * 1em;
+	}
+
+	.mr#{$i} {
+		margin-right: $i * 10px;
+	}
+
+	.ml#{$i} {
+		margin-left: $i * 10px;
+	}
+
+	.mx#{$i} {
+		margin: 0 $i * 10px;
+	}
+
+	.my#{$i} {
+		margin: $i * 10px 0;
+	}
+
+	.pt#{$i} {
+		padding-top: $i * 10px;
+	}
+
+	.pb#{$i} {
+		padding-bottom: $i * 10px;
+	}
+
+	.pl#{$i} {
+		padding-left: $i * 10px;
+	}
+
+	.pr#{$i} {
+		padding-right: $i * 10px;
+	}
+
+	.px#{$i} {
+		padding: 0 $i * 10px;
+	}
+
+	.py#{$i} {
+		padding: $i * 10px 0;
+	}
+}
+
+.mx-auto {
+	margin: 0 auto;
+}
+
+// -------------------  文字水平居中 --------------------------
+.tac {
+	text-align: center;
+}
+
+// -----------------  省略号 -----------------------------------
+.line-clamp1 {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// 多行 利用height和line-height的倍数关系调整需要显示的行数，防止超出的文字露出。
+.line-clamp2,
+.line-clamp3,
+.line-clamp4 {
+	position: relative;
+	overflow: hidden;
+	word-break: break-all;
+	line-height: 2em;
+}
+
+.line-clamp2 {
+	height: 4em;
+}
+
+.line-clamp3 {
+	height: 6em;
+}
+
+.line-clamp4 {
+	height: 8em;
+}
+
+// --------------------  图标  -----------------------------
+// @each $name in $icon-list {
+// 	.icon-#{$name} {
+// 		background: url('../assets/common/#{$name}@2x.png') 50%/100% no-repeat;
+// 	}
+// }
+
+.icon {
+	cursor: pointer;
+	@include size(20px);
+}
+
+.icon-look-more {
+	@include size(24px);
+}
+
+.icon-add,
+.icon-minus,
+.icon-download {
+	@include size(16px);
+}
+
+.icon-back,
+.icon-forward,
+.icon-back-disabled,
+.icon-forward-disabled {
+	@include size(18px, 28px);
+}
