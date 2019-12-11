@@ -1,6 +1,6 @@
 ## 一、技术选型
 
-基础：vue-cli 3 + vue + SCSS + ES6 
+基础：vue-cli 4 + vue + SCSS + ES6 
 
 UI 库：view-design (iview 4.0)
 
@@ -143,6 +143,16 @@ Commit 工具：commitizen + cz-conventional-changelog（Angular）
 
    ```
    cnpm install -S axios qs
+   ```
+
+### 2.6 查看 dist 打包效果
+
+1.  安装
+
+   ```
+   cnpm install -g serve
+   
+   serve -s dist
    ```
 
    

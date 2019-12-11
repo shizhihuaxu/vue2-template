@@ -3,19 +3,19 @@
  *  @desc 将 api 接口注册为 vue 的插件
  */
 
-import api from './api';
+import api from './api'
 
 const install = (Vue) => {
-  if (install.installed) return;
-  install.installed = true;
+  if (install.installed) return
+  install.installed = true
 
   Object.defineProperties(Vue.prototype, {
     $api: {
       get() {
-        return api;
+        return api
       },
     },
-  });
-};
+  })
+}
 
-export default install;
+export default install

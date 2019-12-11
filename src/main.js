@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import api from './api'
+import server from './server'
 import './iview'
 import './styles/utilities.scss'
 import './styles/reset.scss'
@@ -17,7 +17,7 @@ Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key])
 })
 
-Vue.use(api)
+Vue.use(server)
 // 将组件注册为全局组件
 Vue.use(globalComponents)
 // 全局混入
