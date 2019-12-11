@@ -2,7 +2,8 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import './plugins/iview';
+import api from './api';
+import './iview';
 import './styles/utilities.scss';
 import './styles/reset.scss';
 import commonMixins from './scripts/mixins/common-mixins';
@@ -16,6 +17,7 @@ Object.keys(filters).forEach((key) => {
   Vue.filter(key, filters[key]);
 });
 
+Vue.use(api);
 // 将组件注册为全局组件
 Vue.use(globalComponents);
 // 全局混入
