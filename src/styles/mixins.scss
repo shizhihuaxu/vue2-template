@@ -2,103 +2,102 @@
  * @author shizhihuaxu 2018/11/08
  * @desc scss mixin 
  */
- @import './variables.scss';
+@import './variables.scss';
 
- // 字体大小，颜色
- @mixin fsc($size: 14px, $color: $font-content-color) {
-     font-size: $size;
-     color: $color;
- }
- 
- // 元素尺寸
- @mixin size($width, $height: $width) {
-     width: $width;
-     height: $height;
- }
- 
- // 高度，行高
- @mixin lh($height, $line-height: $height) {
-     height: $height;
-     line-height: $line-height;
- }
- 
- // 定位上下左右居中
- @mixin center {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translateY(-50%);
-     transform: translateX(-50%);
- }
- 
- // 定位上下居中
- @mixin tbc {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
- }
- 
- // 定位左右居中
- @mixin lrc {
-     position: absolute;
-     left: 50%;
-     transform: translateX(-50%);
- }
- 
- // flex布局 两侧分布
- @mixin flex-sb {
-     display: flex;
-     justify-content: space-between;
- }
- 
- // flex 布局 主轴方向
- @mixin flex-dir($direction: row) {
-     display: flex;
-     flex-direction: $direction;
- }
- 
- // flex 布局 主轴上项目对齐方式
- @mixin flex-justify($justify: space-between) {
-     display: flex;
-     justify-content: $justify;
- }
- 
- // flex 布局 交叉轴上项目对齐方式
- @mixin flex-align($align: center) {
-     display: flex;
-     align-items: $align;
- }
- 
- // flex 布局 主轴及交叉轴对齐方式
- @mixin flex-justify-align($justify: flex-start, $align: center) {
-     display: flex;
-     justify-content: $justify;
-     align-items: $align;
- }
- 
- // flex 布局 主轴方向、主轴交叉轴对齐方式
- @mixin flex-dir-justify-align($direction: row, $justify: flex-start, $align: center) {
-     display: flex;
-     flex-direction: $direction;
-     justify-content: $justify;
-     align-items: $align;
- }
- 
- // 背景图 覆盖
- @mixin bg-cover() {
-     background: {
-         size: cover;
-         repeat: no-repeat;
-         position: center center;
-     }
- }
- 
- // 背景图 宽度占满
- @mixin bg-full-width() {
-     background: {
-         size: 100%;
-         repeat: no-repeat;
-         position: center center;
-     }
- }
- 
+// 字体大小，颜色
+@mixin fsc($size: 14px, $color: $font-content-color) {
+  font-size: $size;
+  color: $color;
+}
+
+// 元素尺寸
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// 高度，行高
+@mixin lh($height, $line-height: $height) {
+  height: $height;
+  line-height: $line-height;
+}
+
+// 定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+// 定位上下居中
+@mixin tbc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// 定位左右居中
+@mixin lrc {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// flex布局 两侧分布
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+// flex 布局 主轴方向
+@mixin flex-dir($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+// flex 布局 主轴上项目对齐方式
+@mixin flex-justify($justify: space-between) {
+  display: flex;
+  justify-content: $justify;
+}
+
+// flex 布局 交叉轴上项目对齐方式
+@mixin flex-align($align: center) {
+  display: flex;
+  align-items: $align;
+}
+
+// flex 布局 主轴及交叉轴对齐方式
+@mixin flex-justify-align($justify: flex-start, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// flex 布局 主轴方向、主轴交叉轴对齐方式
+@mixin flex-dir-justify-align($direction: row, $justify: flex-start, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// 背景图 覆盖
+@mixin bg-cover() {
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center center;
+  }
+}
+
+// 背景图 宽度占满
+@mixin bg-full-width() {
+  background: {
+    size: 100%;
+    repeat: no-repeat;
+    position: center center;
+  }
+}

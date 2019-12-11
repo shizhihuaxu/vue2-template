@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class='home'>
+    <HelloWorld msg='hello world' />
     <Button @click='login'>登录</Button>
   </div>
 </template>
@@ -11,11 +11,11 @@ export default {
   name: 'home',
   methods: {
     login() {
-      let params = {
-          username: '',
-          password: '',
+      const params = {
+        username: '',
+        password: '',
       }
-      this.$api.login(params).then((res) =>{
+      this.$api.login(params).then((res) => {
         switch (true) {
           case res.status === 200:
             this.total = res.data.count
@@ -27,6 +27,6 @@ export default {
         }
       })
     },
-  }
-};
+  },
+}
 </script>
