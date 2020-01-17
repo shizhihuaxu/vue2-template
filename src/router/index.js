@@ -11,20 +11,18 @@ const About = () => import('@/views/About')
 Vue.use(VueRouter)
 
 const routes = [{
-  path: '/',
+  path: '/home',
   name: 'home',
   component: Home,
-},
-{
+}, {
   path: '/about',
   name: 'about',
-  meta: {
-    // 需要验证 token
-    requiresAuth: true,
-  },
+  // meta: {
+  //   // 需要验证 token
+  //   requiresAuth: true,
+  // },
   component: About,
-},
-]
+}]
 
 const router = new VueRouter({
   mode: 'history',
