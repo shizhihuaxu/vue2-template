@@ -2,8 +2,8 @@
  *  @author shixhihuaxu 2019/12/11
  *  @desc 生成 API 接口
  */
-import $axios from './axios';
-import STATIC from '../scripts/constants';
+import $axios from './axios'
+import STATIC from '../scripts/constants'
 
 /**
  * @method login
@@ -15,7 +15,7 @@ const login = data => $axios({
   url: STATIC.API.LOGIN,
   method: 'POST',
   data,
-});
+})
 
 /**
  * @method logout
@@ -26,9 +26,9 @@ const login = data => $axios({
 const logout = () => $axios({
   url: STATIC.API.LOGOUT,
   method: 'POST',
-});
+})
 
 export default {
   login,
   logout,
-};
+}
