@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'my-iconfont';
+    src: url('');
+    // 字体文件 url
+    // src: url('~@/assets/iconfonts/my-iconfont.eot?pve3l2');
+    // src: url('~@/assets/iconfonts/my-iconfont.eot?pve3l2#iefix') format('embedded-opentype'),
+    //     url('~@/assets/iconfonts/my-iconfont.ttf?pve3l2') format('truetype'),
+    //     url('~@/assets/iconfonts/my-iconfont.woff?pve3l2') format('woff'),
+    //     url('~@/assets/iconfonts/my-iconfont.svg?pve3l2#my-iconfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'my-iconfont' !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+    content: "\e908";
+}
+
+.icon-delete:before {
+    content: "\e900";
+}
+
+.icon-export:before {
+    content: "\e901";
+}
+
+.icon-filter:before {
+    content: "\e902";
+}
+
+.icon-markread:before {
+    content: "\e903";
+}
+
+.icon-reboot:before {
+    content: "\e904";
+}
+
+.icon-refresh:before {
+    content: "\e905";
+}
+
+.icon-reset:before {
+    content: "\e906";
+}
+
+.icon-turnoff:before {
+    content: "\e907";
+}

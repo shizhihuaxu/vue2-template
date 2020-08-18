@@ -1,1 +1,68 @@
-// reset view-design styles
+/**
+ * @author shizhihuaxu  2020/07/03
+ * 重置样式文件
+ */
+@charset 'utf-8';
+
+@import '@/styles/reset-view-ui/_button.scss';
+@import '@/styles/reset-view-ui/_modal.scss';
+
+// 滚动条样式
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+    padding: 0 2px;
+}
+
+
+::-webkit-scrollbar-thumb:horizontal {
+    height: 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 6px;
+    background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    width: 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 6px;
+    background-color: #e6e6e6;
+}
+
+// 滚动条的 hover样式
+::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+html,
+body {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    @include font-sc($font-size-base, $font-content-color);
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:link {
+    color: $primary-color;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+input {
+    outline: none;
+    box-shadow: none;
+}
